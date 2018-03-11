@@ -1,0 +1,55 @@
+jar {
+    baseName = 'you-money-web'
+    version = '1.0'
+}
+
+apply plugin: 'spring-boot'
+
+bootRepackage {
+    enabled = false
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        maven { url "http://maven.aliyun.com/nexus/content/groups/public" }
+        maven { url "http://repo.spring.io/snapshot" }
+        maven { url "http://repo.spring.io/milestone" }
+        jcenter()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.5.RELEASE")
+    }
+}
+
+
+archivesBaseName = 'web'
+
+ext {
+    springBootVar = '2.0.0.RELEASE'
+}
+
+
+dependencies {
+
+    compile project(':core')
+    //项目中所有的依赖都要在这个地方进行添加 从而保证在实现业务的时候可以进行使用
+    //web-api 就是单纯的api 实现
+
+    // spring boot
+    compile "org.springframework.boot:spring-boot-starter-web:$springBootVar"
+
+    compile "org.springframework.boot:spring-boot-starter-actuator:$springBootVar"
+
+    // mybatis
+    compile group: 'org.mybatis', name: 'mybatis', version: '3.4.5'
+
+    // druid
+    compile group: 'com.alibaba', name: 'druid', version: '1.1.6'
+
+    // ehcache
+    compile group: 'net.sf.ehcache', name: 'ehcache', version: '2.10.4'
+
+    testCompile "org.springframework.boot:spring-boot-starter-test:$springBootVar"
+}

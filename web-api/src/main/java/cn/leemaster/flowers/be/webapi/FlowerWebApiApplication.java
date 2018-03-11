@@ -1,3 +1,5 @@
+package cn.leemaster.flowers.be.webapi;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -5,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author leemaster
  * @version V1.0
  * @Project You-Money
- * @Title FlowerWebApiApplication.java created on 18-3-3
+ * @Title cn.leemaster.flowers.be.webapi.FlowerWebApiApplication.java created on 18-3-3
  * @Package PACKAGE_NAME
  * @Describtion
  * Api Bootstrap class for the Application
