@@ -15,6 +15,7 @@ import java.util.List;
  * Cglib 技术进行 实验 ，初步的封装就是进行一个简单的反射
  * @date 2018/3/12上午1:21
  */
+
 public interface Dto {
 
     /**
