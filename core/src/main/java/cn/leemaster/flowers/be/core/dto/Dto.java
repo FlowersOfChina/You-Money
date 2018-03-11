@@ -17,19 +17,54 @@ import java.util.List;
  */
 public interface Dto {
 
-    String getAsString();
+    /**
+     * 按照key 获取一个String 类型的数据
+     * @param dtoKey
+     * @return
+     */
+    String getAsString(String dtoKey);
 
-    Date getAsDate();
+    /**
+     * 按照key 获取一个 java.util.Date 类型
+     * @param dtoKey
+     * @return
+     */
+    Date getAsDate(String dtoKey);
 
-    Integer getAsInteger();
+    /**
+     * 按照key 获取一个 Integer 类型的数据
+     * @param dtoKey
+     * @return
+     */
+    Integer getAsInteger(String dtoKey);
 
-    BigDecimal getAsBigDecimal();
+    /**
+     * 按照 key 获取一个 BigDecimal 类型数据
+     * @param dtoKey
+     * @return
+     */
+    BigDecimal getAsBigDecimal(String dtoKey);
 
-    List getAsList();
+    /**
+     * 按照key 获取一个 List 类型的数据
+     * @param dtoKey
+     * @return
+     */
+    List getAsList(String dtoKey);
 
-    Timestamp getAsTimestamp();
+    /**
+     * 按照类型获取一个 Timestamp 类型的数据
+     * @param dtoKey
+     * @return
+     */
+    Timestamp getAsTimestamp(String dtoKey);
 
-    Boolean getAsBoolean();
+    /**
+     * 按照类型获取一个 boolean 数据
+     * @param dtoKey
+     * @return
+     */
+    Boolean getAsBoolean(String dtoKey);
 
     /**
      * 当前端的请求传来字符串的时候将String 存储在DTO 中
@@ -38,5 +73,10 @@ public interface Dto {
      */
     void setDefaultJson(String json);
 
-    String getJsonString();
+    /**
+     * 直接转换一个对象变成 String 类型
+     * @param object
+     * @return
+     */
+    String getJsonString(Object object);
 }
