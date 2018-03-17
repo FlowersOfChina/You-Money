@@ -12,6 +12,6 @@ package cn.leemaster.flowers.be.core.classify;
  *
  * @date 2018/3/18上午1:20
  */
-
+//TODO  need to complete this mapper to create the all classify
 public interface TableClassifyMapper {
 }

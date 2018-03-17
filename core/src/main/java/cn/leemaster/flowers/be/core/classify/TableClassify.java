@@ -10,7 +10,9 @@ import java.util.List;
  * 创建无限分类方案的接口方法，这个方法最后生成的 bean 会成为单例对象注入在 spring 的context 对象内部
  * @date 2018/3/18上午1:11
  */
-public interface TabelClassify {
+//TODO need to complete this interface and will use this interface
+
+public interface TableClassify {
 
     /**
      * 使用id 值获取类的名称
