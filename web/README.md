@@ -24,11 +24,11 @@ Model 和 Mybatis 各种实体定义和 TypeHandlers
         user_phonenum  用户手机号 varchar(11)
         user_password   用户密码 char(32)
 
-* platform  平台 表
+* platform  平台 表 
 
-        platform_name  平台名称 varchar(20)
-        platform_logo  平台logo varchar(20)
-        platform_yield  平台收益率 float
+        platform_name  平台名称  plat_name varchar(20)
+        platform_logo  平台logo  plat_logo varchar(20)
+        platform_yield  平台收益率 plat_yield float
 
 * product  产品  表
 
@@ -60,7 +60,7 @@ Model 和 Mybatis 各种实体定义和 TypeHandlers
 * product_collection  产品收藏 表(用户和产品的中间表)pro_collection
     
         user_phonenum 用户手机号 varchar(11)
-        product_name 产品名称 varchar(20)
+        product_name 产品名称 pro_name varchar(20)
 
 * information_collection 资讯收藏 表(用户和资讯的中间表) info_collection
 
