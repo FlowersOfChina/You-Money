@@ -31,7 +31,7 @@ Model 和 Mybatis 各种实体定义和 TypeHandlers
         platform_yield  平台收益率 plat_yield float
 
 * product  产品  表
-'''
+```
        product_name 产品名称 pro_name varchar(20)
         product_Issuer 发行机构 pro_Issuer varchar(20)
         product_fund 资金规模 pro_fund  int  
@@ -47,10 +47,10 @@ Model 和 Mybatis 各种实体定义和 TypeHandlers
         product_Financial time limit 理财期限 pro_ftl int//月为单位  
         product_Annual income 年化收益 pro_ai flost//  
         product_Annual income of 7 days 7日年化收益 pro_aisd flost  
-        '''
+```
 
 * information  资讯  表 info
-'''
+```
 
         information_title 资讯标题 info_title varchar(20)  
         information_data  日期 info_data date  
@@ -58,7 +58,7 @@ Model 和 Mybatis 各种实体定义和 TypeHandlers
         information_picture  图片 info_picture varchar(20)    
         information_content  内容 info_content text    
         information_type 资讯类别（限制为 "新闻"、"测评"、"百科"、"攻略" 共4种）info_type char(10)   
-        '''
+```
 
 * product_collection  产品收藏 表(用户和产品的中间表)pro_collection
     
