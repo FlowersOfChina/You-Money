@@ -35,7 +35,7 @@ Model 和 Mybatis 各种实体定义和 TypeHandlers
 
 * product  产品  表
 ```
-       product_name 产品名称 pro_name varchar(20)
+        product_name 产品名称 pro_name varchar(20)
         product_Issuer 发行机构 pro_Issuer varchar(20)
         product_fund 资金规模 pro_fund  int  
         product_tens of thousands of earnings yesterday 昨日万份收益 pro_ttey  float  
