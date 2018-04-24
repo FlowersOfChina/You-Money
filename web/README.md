@@ -21,51 +21,51 @@ Model 和 Mybatis 各种实体定义和 TypeHandlers
 
 * user 用户  表
 
-        user_phonenum  用户手机号
-        user_password   用户密码
+        user_phonenum  用户手机号 varchar(11)
+        user_password   用户密码 char(32)
 
 * platform  平台 表
 
-        platform_name  平台名称
-        platform_logo  平台logo
-        platform_yield  平台收益率
+        platform_name  平台名称 varchar(20)
+        platform_logo  平台logo varchar(20)
+        platform_yield  平台收益率 float
 
 * product  产品  表
 
-        product_name 产品名称
-        product_Issuer 发行机构
-        product_fund 资金规模
-        product_tens of thousands of earnings yesterday 昨日万份收益
-        product_diurnal interest rate 日年化利率
-        product_purchase amount 起购金额
-        product_upper limit of single day extraction  单日提取上限
-        product_speed up  提现速度
-        product_link 链接
-        product_word of mouth 口碑
-        product_Rate of return 收益率
-        product_Raise the amount of cash 提现额度
-        product_Financial time limit 理财期限
-        product_Annual income 年化收益
-        product_Annual income of 7 days 7日年化收益
+        product_name 产品名称 pro_name varchar(20)
+        product_Issuer 发行机构 pro_Issuer varchar(20)
+        product_fund 资金规模 pro_fund  int
+        product_tens of thousands of earnings yesterday 昨日万份收益 pro_ttey  float
+        product_diurnal interest rate 日年化利率  pro_dir float
+        product_purchase amount 起购金额 pro_pa int
+        product_upper limit of single day extraction  单日提取上限 pro_ulisde int
+        product_speed up  提现速度 pro_su int //小时为单位
+        product_link 链接 pro_link varchar(20)
+        product_word of mouth 口碑 pro_wm varchar(20)
+        product_Rate of return 收益率pro_rt float
+        product_Raise the amount of cash 提现额度 pro_rac int
+        product_Financial time limit 理财期限 pro_ftl int//月为单位
+        product_Annual income 年化收益 pro_ai flost//
+        product_Annual income of 7 days 7日年化收益 pro_aisd flost
 
-* information  资讯  表
+* information  资讯  表 info
 
-        information_title 资讯标题
-        information_data  日期
-        information_author  作者
-        information_picture  图片
-        information_content  内容
-        information_type 资讯类别（限制为 "新闻"、"测评"、"百科"、"攻略" 共4种）
+        information_title 资讯标题 info_title varchar(20)
+        information_data  日期 info_data date
+        information_author  作者 info_author varchar(20)
+        information_picture  图片 info_picture varchar(20)
+        information_content  内容 info_content text
+        information_type 资讯类别（限制为 "新闻"、"测评"、"百科"、"攻略" 共4种）info_type char(10)
 
-* product_collection  产品收藏 表(用户和产品的中间表)
+* product_collection  产品收藏 表(用户和产品的中间表)pro_collection
     
-        user_phonenum 用户手机号
-        product_name 产品名称
+        user_phonenum 用户手机号 varchar(11)
+        product_name 产品名称 varchar(20)
 
-* information_collection 资讯收藏 表(用户和资讯的中间表)
+* information_collection 资讯收藏 表(用户和资讯的中间表) info_collection
 
-        user_phonenum  用户手机号
-        information_title 资讯标题
+        user_phonenum  用户手机号 varchar(11)
+        information_title 资讯标题 info_title varchar(20)
 
   ***没有加到数据库表中的属性如下？？***
 
