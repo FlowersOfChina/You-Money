@@ -20,15 +20,18 @@ Model 和 Mybatis 各种实体定义和 TypeHandlers
 
 
 * user 用户  表
-
+```
         user_phonemun 用户手机号 user_phone varchar(11)
         user_password   用户密码 char(32)
+ ```
 
 * platform  平台 表 
+```
 
         platform_name  平台名称  plat_name varchar(20)
         platform_logo  平台logo  plat_logo varchar(20)
         platform_yield  平台收益率 plat_yield float
+```
 
 * product  产品  表
 ```
